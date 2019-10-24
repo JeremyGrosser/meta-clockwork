@@ -2,12 +2,13 @@
 
 ## Naming
 
-Clockwork Tech is a company that sells the GameShell, a handheld game console
-kit. One of the modules in the GameShell kit is a compute board based on the
-AllWinner R16, also known as A33, or sun8i in some codebases. Presumably,
-Clockwork Tech could release upgraded compute modules for the GameShell in the
-future, so we've named this layer "meta-clockwork" to encompass BSPs for all
-Linux compatible boards from this company.
+[Clockwork Tech](https://www.clockworkpi.com) is a company that sells the
+GameShell, a handheld game console kit. One of the modules in the GameShell kit
+is a compute board based on the AllWinner R16, also known as A33, or sun8i in
+some codebases. Presumably, Clockwork Tech could release upgraded compute
+modules for the GameShell in the future, so we've named this layer
+"meta-clockwork" to encompass BSPs for all Linux compatible boards from this
+company.
 
 Currently, the only board is known as *cpi3*. I have no idea what happened to
 cpi1 and cpi2. I assume the Pi in the name is meant to remind you of the
