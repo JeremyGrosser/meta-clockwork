@@ -60,6 +60,8 @@ Start with [Setting Up to Use The Yocto Project](https://www.yoctoproject.org/do
     git clone -b zeus https://github.com/linux-sunxi/meta-sunxi
     git clone -b zeus https://github.com/JeremyGrosser/meta-clockwork
     source oe-init-build-env
+    <edit conf/bblayers.conf to add meta-sunxi and meta-clockwork>
+    <edit conf/local.conf change MACHINE to clockwork-cpi3>
     bitbake core-image-minimal
 
 This will take a while. Depending on your hardware configuration, it may take
