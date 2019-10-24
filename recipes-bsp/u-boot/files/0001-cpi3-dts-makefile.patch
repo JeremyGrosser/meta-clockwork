@@ -1,0 +1,15 @@
+diff --git a/arch/arm/dts/Makefile b/arch/arm/dts/Makefile
+index 20dbc2ff84..098260fad0 100644
+--- a/arch/arm/dts/Makefile
++++ b/arch/arm/dts/Makefile
+@@ -468,7 +468,9 @@ dtb-$(CONFIG_MACH_SUN8I_A33) += \
+ 	sun8i-a33-sinlinx-sina33.dtb \
+ 	sun8i-r16-bananapi-m2m.dtb \
+ 	sun8i-r16-nintendo-nes-classic-edition.dtb \
+-	sun8i-r16-parrot.dtb
++	sun8i-r16-parrot.dtb \
++	sun8i-r16-clockworkpi-cpi3.dtb \
++	sun8i-r16-clockworkpi-cpi3-hdmi.dtb
+ dtb-$(CONFIG_MACH_SUN8I_A83T) += \
+ 	sun8i-a83t-allwinner-h8homlet-v2.dtb \
+ 	sun8i-a83t-bananapi-m3.dtb \
