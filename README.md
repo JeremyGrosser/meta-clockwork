@@ -17,19 +17,17 @@ RaspberryPi, a similar and much more popular development board.
 ## Features
 
  - Building u-boot and SPL from source, no copying binaries from the clockwork images!
- - Patched mainline Linux 5.2.5 kernel from meta-sunxi, includes Lima drivers
+ - Patched mainline Linux 5.4 kernel from meta-sunxi, includes Lima drivers
  - Mesa 19.1.6, also with Lima, from Yocto core
  - Broadcom wifi firmware configuration
 
 ## Known Issues
 
- - u-boot LCD flashes on startup, doesn't display anything. Suspect an issue
-   with LCD timings or polarity in the u-boot defconfig.
  - DRAM clock can probably be increased, but the current setting is a safe
    default.
  - No HDMI output. Need to combine the -hdmi dts and configure wayland for a
-   second output.
- - Boot takes a few seconds due to overly complicated u-boot scripts.
+   second output. Note: supposedly this only works on the CPI rev 3.1 boards
+   due to a PCB error.
  - Distro layer not yet public, but it does boot to weston and run an app.
 
 ## Yocto
@@ -71,12 +69,13 @@ subsequent runs should be faster.
 If all went well, you should now have some files in `tmp-glibc/deploy/images/clockwork-cpi3/`
 
 Insert a microSD card and `dd` the
-`core-image-minimal-clockwork-cpi3.sunxi-sdimg` file to it. If you don't know
+`core-image-minimal-clockwork-cpi3.wks` file to it. If you don't know
 how to do this, [read this guide](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md).
 
 Put the microSD card in your cpi3 board and hold the power button for 10
 seconds, or until the display turns on. If it worked, you should see a bunch of
-penguins and eventually a login prompt.
+penguins and eventually a login prompt. If nothing happens, try poking the
+reset button next to the GPIO connector.
 
 # Next Steps
 
