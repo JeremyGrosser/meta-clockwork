@@ -1,7 +1,6 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
 SRC_URI_append_clockwork-cpi3 = " \
-    file://0001-sun8i-aif2-audio-support.patch \
     file://0002-backlight-KD027-support.patch \
     file://0003-backlight-OCP8178-support.patch \
     file://0004-drm-Support-panel-simple-for-clockwork-cpi3.patch \
